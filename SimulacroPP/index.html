@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Llena del formulario del alta</title>
+</head>
+
+<body>
+    <header>
+        <h1>Llena del formulario del alta</h1>
+    </header>
+    <main>
+
+        <section>
+
+
+
+            <fieldset>
+
+                <legend>Información del anuncio</legend>
+                <div class="contenedor">
+                    <form action="" class="form-anuncio">
+                        <label for="titulo">TITULO:</label>
+                        <input  type="titulo" name="txtTitulo" placeholder="Titulo" required>
+                        <small></small>
+                        <label for="transaccion">TRANSACCION:</label>
+                        <br></br>
+                        <b>VENTA</b>
+                        <input  type="radio" name="rdoTransaccion" value="VENTA" checked>
+                        <b>ALQUILER</b>
+                        <input  type="radio" name="rdoTransaccion" value="ALQUILER">
+                        <br></br>
+                        <label for="descripcion">DESCRIPCION:</label>
+                        <input  type="descripcion" name="txtDescripcion"
+                            placeholder="Descripcion" required>
+                        <small></small>
+                        <label for="precio">PRECIO:</label>
+                        <input  type="precio" name="txtPrecio" placeholder="Precio" required>
+                        <small></small>
+                        <br></br>
+                        <label for="cantbaños">CANTIDAD DE BAÑOS:</label>
+                        <input  type="cantbaños" name="txtCantbanios"
+                            placeholder="Cantidad de baños" required>
+                        <small></small>
+                        <br></br>
+                        <label for="cantautos">CANTIDAD DE AUTOS:</label>
+                        <input  type="cantautos" name="txtCantAutos"
+                            placeholder="Cantidad de autos" required>
+                        <small></small>
+                        <br></br>
+                        <label for="cantdormitorios">CANTIDAD DE DORMITORIOS:</label>
+                        <input  type="cantdormitorios" name="txtCantDormitorios"
+                            placeholder="Cantidad de dormitorios" required>
+                        <small></small>
+                        <br></br>
+                        <input type="submit" value="Enviar">
+                        <input type="button" value="Eliminar" id="btnDelete">
+                        <input type="button" value="Cancelar" id="btnCancelar">
+                        <input style="display: none" type="text" name="txtId">
+                    </form>
+                </div>
+            </fieldset>
+        </section>
+        <section class="lista-anuncio">
+
+            <div class="loader" , id="loader"> </div>
+            <div id="divTabla"></div>
+
+        </section>
+    </main>
+
+
+
+    <script src="./scripts/app.js" type="module"></script>
+</body>
+
+</html>

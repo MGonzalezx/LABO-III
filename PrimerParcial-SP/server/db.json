@@ -1,0 +1,14 @@
+{
+  "anuncios": [
+    {
+      "id": "1668810173257",
+      "titulo": "Gatos a la venta",
+      "descripcion": "Gatos grandes",
+      "animal": "GATO",
+      "precio": "150",
+      "raza": "Egipcio",
+      "nacimiento": "2022-11-09",
+      "vacuna": "si"
+    }
+  ]
+}

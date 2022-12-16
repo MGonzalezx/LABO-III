@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pokemon.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Peticiones Ajax</title>
+</head>
+
+<body>
+
+    <!-- TENGO QUE ESTAR EN LA DIRECCION SIGUIENTE Y LUEGO UTILIZAR
+    ESE COMMANDO NPM -->
+    <!-- /Desktop/LaboratorioIII/peticiones2022/server
+    npm start -->
+    <!-- ctrl+c para cerrar el server en la terminal -->
+    <input type="text" id="nombre" >
+    <button onclick="getPersonas()">Traer Personas</button>
+    <button onclick="getPersona(5)">Traer Persona id 5</button>
+    <button onclick="createPersona()">Crear Persona</button>
+     <!-- ajax -->
+    <button onclick="updatePersona(20)">Modificar Persona</button>
+     <!-- ajax -->
+    <!-- axios y fetch -->
+    <button onclick="updatePersona({ id:30, nombre:'Jorgelina', sexo:'Female'})">Modificar Persona</button>
+   <!-- axios y fetch -->
+
+    <button onclick="deletePersona(30)">Eliminar Persona id 32</button>
+    <button onclick="getPersonasAsync()">Traer Personas Async</button>
+    <button onclick="getPersonaAsync(5)">Traer Persona Async</button>
+
+
+    <div id="spinner"></div> 
+    <div class="divImagen">
+        <img id="imgPokemon" src="" alt="" >
+    </div>
+
+    <!-- <script src="./js/ajax.js"></script> -->
+    <script src="./js/fetch.js"></script>
+    <!-- <script src="./js/pokemones.js"></script> -->
+    <!-- <script src="./js/axios.js"></script> -->
+</body>
+
+</html>

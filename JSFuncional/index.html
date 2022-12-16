@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./js/script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4 mt-3">
+                <h2>Lista de Empleados</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <button type="button" class="btn btn-primary my-5" id="btnSexo">Filtrar Sexo</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-secondary my-5" id="btnMap">Mail</button>
+                
+            </div>
+            <div class="col-8">
+                <div class="form-check form-check-inline my-5">
+                    <input type="checkbox" name="id" id="cbId" class="form-check-input" checked>
+                    <label for="cbId" class="form-check-label">ID</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="nombre" id="cbNombre" class="form-check-input" checked>
+                    <label for="cbNombre" class="form-check-label">Nombre</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="apellido" id="cbApellido" class="form-check-input" checked>
+                    <label for="cbApellido" class="form-check-label">Apellido</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="email" id="cbEmail" class="form-check-input" checked>
+                    <label for="cbEmail" class="form-check-label">Email</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="sexo" id="cbSexo" class="form-check-input" checked>
+                    <label for="cbSexo" class="form-check-label">Sexo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="sueldo" id="cbSueldo" class="form-check-input" checked>
+                    <label for="cbSueldo" class="form-check-label">Sueldo</label>
+                </div>
+                
+            </div>
+        </div>
+         <div id="divTabla"></div>
+    </div>
+   
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+
+    background-image: url("../images/fondoPerros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+
+    min-height: 150px;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    display: inline;
+
+}
+
+header nav li {
+
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-right: 50px;
+    margin-top: 10px;
+
+}
+
+header nav a {
+    color: #6cf710;
+    font-weight: bold;
+}
+
+header nav a :hover {
+    cursor: pointer;
+}
+
+#columna1 {
+    width: 690px;
+    float: left;
+    min-height: 150px;
+}
+
+#columna1 img {
+
+    margin-left: 20px;
+    width: 125px;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+#articulo{
+    height: 50%;
+    width: 35%;
+    border-radius: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    border-style:solid black;
+    /* background-color: rgba(245, 245, 220, 0.712); */
+    margin: auto;
+    text-align: center;
+   border-width: thick;
+   
+   
+}
+
+#articulo button{
+    width: 50%;
+    background-color: #17960c;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+main article ul 
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 50px;
+    margin-right: 35px;
+    text-align: left;
+
+}
+
+
+
+#articulo article{
+    background-color: rgba(245, 245, 220, 0.712);
+    border-width: thick;
+    border-color: black;
+    border: solid;
+    padding: 20px;
+    
+  }
+
+ article img {
+    width: 25px;
+}
+
+
+

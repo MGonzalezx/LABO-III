@@ -1,0 +1,139 @@
+{
+  "personas": [
+    {
+      "id": 1,
+      "nombre": "Dewey",
+      "sexo": "Male"
+    },
+    {
+      "id": 2,
+      "nombre": "Mariann",
+      "sexo": "Female"
+    },
+    {
+      "id": 3,
+      "nombre": "Grata",
+      "sexo": "Female"
+    },
+    {
+      "id": 4,
+      "nombre": "Drusie",
+      "sexo": "Female"
+    },
+    {
+      "id": 6,
+      "nombre": "Gabbie",
+      "sexo": "Male"
+    },
+    {
+      "id": 7,
+      "nombre": "Fawn",
+      "sexo": "Female"
+    },
+    {
+      "id": 8,
+      "nombre": "Joel",
+      "sexo": "Male"
+    },
+    {
+      "id": 9,
+      "nombre": "Eliot",
+      "sexo": "Male"
+    },
+    {
+      "id": 10,
+      "nombre": "Giorgio",
+      "sexo": "Male"
+    },
+    {
+      "id": 11,
+      "nombre": "Raleigh",
+      "sexo": "Male"
+    },
+    {
+      "id": 12,
+      "nombre": "Devlin",
+      "sexo": "Male"
+    },
+    {
+      "id": 13,
+      "nombre": "Alexandre",
+      "sexo": "Male"
+    },
+    {
+      "id": 14,
+      "nombre": "Chick",
+      "sexo": "Male"
+    },
+    {
+      "id": 15,
+      "nombre": "Lynda",
+      "sexo": "Female"
+    },
+    {
+      "id": 16,
+      "nombre": "Suzy",
+      "sexo": "Female"
+    },
+    {
+      "id": 17,
+      "nombre": "Wilhelm",
+      "sexo": "Male"
+    },
+    {
+      "id": 18,
+      "nombre": "Doti",
+      "sexo": "Female"
+    },
+    {
+      "id": 20,
+      "nombre": "Cherice",
+      "sexo": "Female"
+    },
+    {
+      "id": 22,
+      "nombre": "Teddy",
+      "sexo": "Female"
+    },
+    {
+      "id": 23,
+      "nombre": "Marsh",
+      "sexo": "Male"
+    },
+    {
+      "id": 24,
+      "nombre": "Anna-maria",
+      "sexo": "Female"
+    },
+    {
+      "id": 25,
+      "nombre": "Wilmette",
+      "sexo": "Female"
+    },
+    {
+      "id": 26,
+      "nombre": "Jeremy",
+      "sexo": "Male"
+    },
+    {
+      "id": 27,
+      "nombre": "Howey",
+      "sexo": "Male"
+    },
+    {
+      "id": 30,
+      "nombre": "Alvin",
+      "sexo": "Male"
+    },
+    {
+      "id": 31,
+      "nombre": "Julia",
+      "sexo": "mujer"
+    },
+    {
+      "nombre": "Julio",
+      "sexo": "hombre",
+      "id": 32
+    }
+  ]
+}

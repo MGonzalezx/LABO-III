@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "nombre": "Devonne",
+        "apellido": "Alger",
+        "email": "dalger0@kickstarter.com",
+        "sexo": "Female",
+        "sueldo": "$35258.75"
+    },
+    {
+        "id": 2,
+        "nombre": "Humfrey",
+        "apellido": "Eleshenar",
+        "email": "heleshenar1@apache.org",
+        "sexo": "Male",
+        "sueldo": "$54183.81"
+    },
+    {
+        "id": 3,
+        "nombre": "Alisa",
+        "apellido": "Scullion",
+        "email": "ascullion2@nytimes.com",
+        "sexo": "Female",
+        "sueldo": "$62674.53"
+    },
+    {
+        "id": 4,
+        "nombre": "Evin",
+        "apellido": "Wittleton",
+        "email": "ewittleton3@blogtalkradio.com",
+        "sexo": "Male",
+        "sueldo": "$36703.89"
+    },
+    {
+        "id": 5,
+        "nombre": "Helene",
+        "apellido": "Baptiste",
+        "email": "hbaptiste4@foxnews.com",
+        "sexo": "Female",
+        "sueldo": "$76090.89"
+    },
+    {
+        "id": 6,
+        "nombre": "Katharine",
+        "apellido": "Jakoubec",
+        "email": "kjakoubec5@archive.org",
+        "sexo": "Female",
+        "sueldo": "$71797.89"
+    },
+    {
+        "id": 7,
+        "nombre": "Englebert",
+        "apellido": "Marshalleck",
+        "email": "emarshalleck6@skyrock.com",
+        "sexo": "Male",
+        "sueldo": "$36887.55"
+    },
+    {
+        "id": 8,
+        "nombre": "Steve",
+        "apellido": "Branni",
+        "email": "sbranni7@engadget.com",
+        "sexo": "Male",
+        "sueldo": "$78189.04"
+    },
+    {
+        "id": 9,
+        "nombre": "Retha",
+        "apellido": "Roseman",
+        "email": "rroseman8@google.cn",
+        "sexo": "Female",
+        "sueldo": "$67723.62"
+    },
+    {
+        "id": 10,
+        "nombre": "Marjorie",
+        "apellido": "Preddy",
+        "email": "mpreddy9@e-recht24.de",
+        "sexo": "Female",
+        "sueldo": "$59604.23"
+    },
+    {
+        "id": 11,
+        "nombre": "Melesa",
+        "apellido": "Sunnex",
+        "email": "msunnexa@amazon.de",
+        "sexo": "Female",
+        "sueldo": "$66713.79"
+    },
+    {
+        "id": 12,
+        "nombre": "Elonore",
+        "apellido": "Asey",
+        "email": "easeyb@ucoz.ru",
+        "sexo": "Female",
+        "sueldo": "$38391.53"
+    },
+    {
+        "id": 13,
+        "nombre": "Antons",
+        "apellido": "MacNamara",
+        "email": "amacnamarac@webs.com",
+        "sexo": "Male",
+        "sueldo": "$64671.64"
+    },
+    {
+        "id": 14,
+        "nombre": "Wynny",
+        "apellido": "Shillan",
+        "email": "wshilland@ask.com",
+        "sexo": "Female",
+        "sueldo": "$49098.70"
+    },
+    {
+        "id": 15,
+        "nombre": "Consolata",
+        "apellido": "Maleby",
+        "email": "cmalebye@i2i.jp",
+        "sexo": "Female",
+        "sueldo": "$37732.44"
+    },
+    {
+        "id": 16,
+        "nombre": "Elvis",
+        "apellido": "Cufley",
+        "email": "ecufleyf@hp.com",
+        "sexo": "Male",
+        "sueldo": "$40920.37"
+    },
+    {
+        "id": 17,
+        "nombre": "Witty",
+        "apellido": "Stut",
+        "email": "wstutg@macromedia.com",
+        "sexo": "Male",
+        "sueldo": "$69683.30"
+    },
+    {
+        "id": 18,
+        "nombre": "Phedra",
+        "apellido": "Guile",
+        "email": "pguileh@vinaora.com",
+        "sexo": "Female",
+        "sueldo": "$60590.03"
+    },
+    {
+        "id": 19,
+        "nombre": "Ronalda",
+        "apellido": "Elintune",
+        "email": "relintunei@phoca.cz",
+        "sexo": "Female",
+        "sueldo": "$53594.90"
+    },
+    {
+        "id": 20,
+        "nombre": "Maren",
+        "apellido": "Auletta",
+        "email": "maulettaj@altervista.org",
+        "sexo": "Female",
+        "sueldo": "$74390.50"
+    },
+    {
+        "id": 21,
+        "nombre": "Leonidas",
+        "apellido": "Rossiter",
+        "email": "lrossiterk@nifty.com",
+        "sexo": "Male",
+        "sueldo": "$43965.23"
+    },
+    {
+        "id": 22,
+        "nombre": "Brigitte",
+        "apellido": "Hurry",
+        "email": "bhurryl@google.es",
+        "sexo": "Female",
+        "sueldo": "$42161.48"
+    },
+    {
+        "id": 23,
+        "nombre": "Maddy",
+        "apellido": "Comettoi",
+        "email": "mcomettoim@youtu.be",
+        "sexo": "Male",
+        "sueldo": "$40220.65"
+    },
+    {
+        "id": 24,
+        "nombre": "Carver",
+        "apellido": "Sowerbutts",
+        "email": "csowerbuttsn@taobao.com",
+        "sexo": "Male",
+        "sueldo": "$69120.19"
+    },
+    {
+        "id": 25,
+        "nombre": "Lewes",
+        "apellido": "Teanby",
+        "email": "lteanbyo@foxnews.com",
+        "sexo": "Male",
+        "sueldo": "$50496.06"
+    },
+    {
+        "id": 26,
+        "nombre": "Zeke",
+        "apellido": "Nortcliffe",
+        "email": "znortcliffep@miibeian.gov.cn",
+        "sexo": "Genderqueer",
+        "sueldo": "$54371.16"
+    },
+    {
+        "id": 27,
+        "nombre": "Karyl",
+        "apellido": "Godber",
+        "email": "kgodberq@soundcloud.com",
+        "sexo": "Female",
+        "sueldo": "$38757.35"
+    },
+    {
+        "id": 28,
+        "nombre": "Fabian",
+        "apellido": "Mompesson",
+        "email": "fmompessonr@zimbio.com",
+        "sexo": "Male",
+        "sueldo": "$79060.48"
+    },
+    {
+        "id": 29,
+        "nombre": "Rourke",
+        "apellido": "Dufoure",
+        "email": "rdufoures@narod.ru",
+        "sexo": "Male",
+        "sueldo": "$38060.17"
+    },
+    {
+        "id": 30,
+        "nombre": "Torey",
+        "apellido": "Dods",
+        "email": "tdodst@marketwatch.com",
+        "sexo": "Male",
+        "sueldo": "$46103.06"
+    },
+    {
+        "id": 31,
+        "nombre": "Heidie",
+        "apellido": "MacCoughan",
+        "email": "hmaccoughanu@elegantthemes.com",
+        "sexo": "Genderfluid",
+        "sueldo": "$69654.06"
+    },
+    {
+        "id": 32,
+        "nombre": "Letti",
+        "apellido": "McClifferty",
+        "email": "lmccliffertyv@cbslocal.com",
+        "sexo": "Female",
+        "sueldo": "$45757.99"
+    },
+    {
+        "id": 33,
+        "nombre": "Prince",
+        "apellido": "Gare",
+        "email": "pgarew@cam.ac.uk",
+        "sexo": "Male",
+        "sueldo": "$40274.45"
+    },
+    {
+        "id": 34,
+        "nombre": "Sherye",
+        "apellido": "Sigart",
+        "email": "ssigartx@apache.org",
+        "sexo": "Non-binary",
+        "sueldo": "$77577.35"
+    },
+    {
+        "id": 35,
+        "nombre": "Brendis",
+        "apellido": "Trenholm",
+        "email": "btrenholmy@purevolume.com",
+        "sexo": "Male",
+        "sueldo": "$68516.92"
+    },
+    {
+        "id": 36,
+        "nombre": "Byrann",
+        "apellido": "McCloud",
+        "email": "bmccloudz@yellowpages.com",
+        "sexo": "Male",
+        "sueldo": "$45834.75"
+    },
+    {
+        "id": 37,
+        "nombre": "Rafi",
+        "apellido": "Yackiminie",
+        "email": "ryackiminie10@smh.com.au",
+        "sexo": "Male",
+        "sueldo": "$45784.08"
+    },
+    {
+        "id": 38,
+        "nombre": "Maible",
+        "apellido": "Hayles",
+        "email": "mhayles11@nhs.uk",
+        "sexo": "Female",
+        "sueldo": "$42418.05"
+    },
+    {
+        "id": 39,
+        "nombre": "Gloriana",
+        "apellido": "de Quincey",
+        "email": "gdequincey12@wix.com",
+        "sexo": "Female",
+        "sueldo": "$55584.67"
+    },
+    {
+        "id": 40,
+        "nombre": "Hi",
+        "apellido": "Lindback",
+        "email": "hlindback13@jimdo.com",
+        "sexo": "Male",
+        "sueldo": "$49943.69"
+    },
+    {
+        "id": 41,
+        "nombre": "Miltie",
+        "apellido": "Ruddock",
+        "email": "mruddock14@altervista.org",
+        "sexo": "Male",
+        "sueldo": "$60096.48"
+    },
+    {
+        "id": 42,
+        "nombre": "Gregorius",
+        "apellido": "Tuhy",
+        "email": "gtuhy15@slashdot.org",
+        "sexo": "Male",
+        "sueldo": "$75498.45"
+    },
+    {
+        "id": 43,
+        "nombre": "Barb",
+        "apellido": "Hale",
+        "email": "bhale16@theglobeandmail.com",
+        "sexo": "Female",
+        "sueldo": "$53128.60"
+    },
+    {
+        "id": 44,
+        "nombre": "Monro",
+        "apellido": "Veysey",
+        "email": "mveysey17@cam.ac.uk",
+        "sexo": "Male",
+        "sueldo": "$53617.87"
+    },
+    {
+        "id": 45,
+        "nombre": "Shelba",
+        "apellido": "Geindre",
+        "email": "sgeindre18@jiathis.com",
+        "sexo": "Female",
+        "sueldo": "$65882.27"
+    },
+    {
+        "id": 46,
+        "nombre": "Ado",
+        "apellido": "Syplus",
+        "email": "asyplus19@jigsy.com",
+        "sexo": "Male",
+        "sueldo": "$40747.21"
+    },
+    {
+        "id": 47,
+        "nombre": "Benedicta",
+        "apellido": "Mougel",
+        "email": "bmougel1a@earthlink.net",
+        "sexo": "Female",
+        "sueldo": "$60515.91"
+    },
+    {
+        "id": 48,
+        "nombre": "Dolli",
+        "apellido": "Bound",
+        "email": "dbound1b@spotify.com",
+        "sexo": "Polygender",
+        "sueldo": "$38610.35"
+    },
+    {
+        "id": 49,
+        "nombre": "Terrel",
+        "apellido": "Bucknall",
+        "email": "tbucknall1c@purevolume.com",
+        "sexo": "Male",
+        "sueldo": "$51737.01"
+    },
+    {
+        "id": 50,
+        "nombre": "Tomkin",
+        "apellido": "Drable",
+        "email": "tdrable1d@printfriendly.com",
+        "sexo": "Male",
+        "sueldo": "$56556.98"
+    }
+]

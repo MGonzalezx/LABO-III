@@ -1,0 +1,24 @@
+{
+  "anuncios": [
+    {
+      "id": 1668810173257,
+      "titulo": "Gatos a la venta",
+      "descripcion": "Gatos grandes",
+      "animal": "GATO",
+      "precio": "150",
+      "raza": "Egipcio",
+      "nacimiento": "2022-11-09",
+      "vacuna": "si"
+    },
+    {
+      "id": 1669134548459,
+      "titulo": "Venta de Perritos",
+      "descripcion": "tres perritos",
+      "animal": "PERRO",
+      "precio": "250",
+      "raza": "Dalmata",
+      "nacimiento": "2022-11-02",
+      "vacuna": "si"
+    }
+  ]
+}

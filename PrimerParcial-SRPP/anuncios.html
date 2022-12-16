@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/anuncios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Anuncios</title>
+</head>
+
+<body>
+    
+    
+        
+        <header>
+            <div id="columna1">
+                <a href="index.html"><img src="images/zorro.png" alt="logo"></a>
+            </div>
+            
+            <nav>
+                
+                
+                    <ul>
+
+                        <li>
+                            <a href="nosotros.html"> Nosotros </a>
+                        </li>
+    
+                        <li>
+                            <a href="anuncios.html"> Anuncios</a>
+    
+                        </li>
+    
+                        <li>
+                            <a href="blog.html"> Blog</a>
+                        </li>
+    
+                        <li>
+                            <a href="contacto.html"> Contactos</a>
+                        </li>
+    
+                    </ul>
+               
+                
+            </nav>
+            
+        </header>
+
+        <main>
+            <h1>Administracion</h1>
+            <img class="imgEncabezado" src="images/encabezado.jpg" alt="banner">
+            
+
+
+
+                <fieldset>
+    
+                    <legend>Información del anuncio</legend>
+                    <div class="contenedor">
+                        <form action="" class="form-anuncio">
+                            <label for="titulo">TITULO:</label>
+                            <input  type="titulo" name="txtTitulo" placeholder="Titulo" required>
+                            <small></small>
+                            <br></br>
+                            <label for="descripcion">DESCRIPCION:</label>
+                        <input  type="descripcion" name="txtDescripcion"
+                            placeholder="Descripcion" required>
+                        <small></small>
+                            <label for="animal">ANIMAL:</label>
+                            <br></br>
+                            <b>PERRO</b>
+                            <input  type="radio" name="rdoAnimal" value="PERRO" checked>
+                            <b>GATO</b>
+                            <input  type="radio" name="rdoAnimal" value="GATO">
+                            <br></br>
+                            <label for="precio">PRECIO:</label>
+                            <input  type="precio" name="txtPrecio" placeholder="Precio" required>
+                            <small></small>
+                            <br></br>
+                            <img src="./images/raza.png" alt="raza">
+                            <input  type="raza" name="txtRaza"
+                                placeholder="Raza" required>
+                            <small></small>
+                            <br></br>
+                            <img src="./images/cigueña.png" alt="nacimiento">
+                            <input type="date" name="txtFechaNacimiento" required>
+                            <small></small>
+                            <br></br>
+                            <img src="./images/vacuna.png" alt="vacuna">
+                            <br></br>
+                            <select name="vacuna">
+                               
+                                <option value="si">Si</option>
+                                <option value="no">No</option>
+                                 
+                            </select>
+                            <small></small>
+                            <br></br>
+                            <label for="alimentado"><input type="checkbox" name="alimentado" id="alimentado">¿Alimentado las ultimas 7 horas?</label>
+                            
+                            <small></small>
+                            <br></br>
+                            
+                                <button type="submit" value="Guardar">
+                                    <i class="fa fa-folder"></i> Guardar
+                                </button>
+                            
+                            <input type="button" value="Eliminar" id="btnDelete">
+                            <input type="button" value="Cancelar" id="btnCancelar">
+                            <input style="display: none" type="text" name="txtId">
+                        </form>
+                    </div>
+                </fieldset>
+            
+            <section class="lista-anuncio">
+                
+                <div id="spinner"></div>
+                <div id="alerta" > </div>
+                <div id="divTabla"></div>
+    
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                
+                   
+                        <ul>
+
+                            <li>
+                                <a href="nosotros.html"> Nosotros </a>
+                            </li>
+        
+                            <li>
+                                <a href="anuncios.html"> Anuncios</a>
+        
+                            </li>
+        
+                            <li>
+                                <a href="blog.html"> Blog</a>
+                            </li>
+        
+                            <li>
+                                <a href="contacto.html"> Contactos</a>
+                            </li>
+                            
+        
+                        </ul>
+                   
+                    
+               
+                    <div id="columna2">
+                        Todos los derechos reservados 2022 &copy;
+                    </div>
+            </nav>
+        </footer>
+    <script src="./scripts/app.js" type="module"></script>
+</body>
+
+</html>

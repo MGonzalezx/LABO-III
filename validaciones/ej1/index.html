@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Validaciones</title>
+  </head>
+  <body>
+    <header>
+      <h1>Validaciones</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <legend>Form Validation</legend>
+          <label for="txtNombre">Nombre:</label>
+          <input type="text" name="nombre" id="txtNombre" />
+          <small></small>
+          <br /><br />
+
+          <label for="txtEmail">Email:</label>
+          <input type="email" name="email" id="txtEmail" />
+          <small></small>
+          <br /><br />
+
+          <label for="txtPassword">Contraseña:</label>
+          <input type="password" name="pass" id="txtPassword" />
+          <small></small>
+          <br /><br />
+
+          <label for="txtPassword2">Confirmar Contraseña:</label>
+          <input type="password" name="pass2" id="txtPassword2" />
+          <small></small>
+          <br /><br />
+
+          <label for="ctrlFile">Imagen de perfil:</label>
+          <input type="file" name="foto" id="ctrlFile" />
+          <small></small>
+          <br /><br />
+
+          <input type="submit" />
+          <input type="reset" />
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

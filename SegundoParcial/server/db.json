@@ -1,0 +1,24 @@
+{
+  "anuncios": [
+    {
+      "id": 1670943111681,
+      "titulo": "Perritos",
+      "descripcion": "tres perros",
+      "animal": "PERRO",
+      "precio": "250",
+      "raza": "Perro salchicha",
+      "nacimiento": "2022-12-01",
+      "vacuna": "si"
+    },
+    {
+      "id": 1671130052332,
+      "titulo": "Gatos a la venta",
+      "descripcion": "Gatos grandes",
+      "animal": "GATO",
+      "precio": "150",
+      "raza": "Egipcio",
+      "nacimiento": "2022-12-01",
+      "vacuna": "no"
+    }
+  ]
+}
