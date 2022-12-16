@@ -16,7 +16,7 @@ let datos;
 var myvar;
 const $divTabla = document.getElementById("divTabla");
 
-const anuncios = JSON.parse(localStorage.getItem("anuncios")) || [];
+//const anuncios = JSON.parse(localStorage.getItem("anuncios")) || [];
 const anunciosFiltrados = JSON.parse(localStorage.getItem("anunciosFiltrados")) || [];
 const divSpinner = document.getElementById("spinner");
 
@@ -266,7 +266,7 @@ slctRaza.addEventListener("click", () => {
     maximo();
     minimo
     toggle();
-    handlerUpdate(datos);
+    actulizarStorage(refrescarDiv(divTabla, crearTabla(datos)));
   } else {
     refrescarDiv(divTabla, crearTabla(filtrarRaza(datos, slctRaza.value)));
     promedio();
@@ -318,25 +318,39 @@ function promedio() {
 function porcentajeVacunados() {
   var promedio = 0;
   var contadorVacunados = 0;
+  var contadorPerro = 0;
+  var contadorGato = 0;
+  var totalAnimales = 0;
+  var contadorNoVacunados = 0;
   var contador = 0;
   $('table tbody tr').each(function () {
     
     if($(this).find("td:nth-last-child(1)").text() == "si"){
       contadorVacunados = contadorVacunados +1;
+    }else{
+      contadorNoVacunados = contadorNoVacunados +1;
+    }
+
+    if($(this).find("td:nth-last-child(5)").text() == "PERRO"){
+      contadorPerro = contadorPerro +1;
+    }else if($(this).find("td:nth-last-child(5)").text() == "GATO"){
+      contadorGato = contadorGato +1;
     }
     
     
   })
 
+  
 
-  datos.forEach((element, index) => {
-    contador = contador + 1;
+  totalAnimales = contadorGato + contadorPerro;
 
-  });
-  if(contadorVacunados == 1 && contador == 2){
+ 
+  if(contadorVacunados == 1 && contador == 2 && contadorNoVacunados == 1 && slctRaza == "todos"){
     contador = 1;
+  }else if(contadorVacunados == 1 && contador == 2 && contadorNoVacunados == 1 && slctRaza == "PERRO"){
+    contador = 2;
   }
-  promedio = (contadorVacunados*100) / contador;
+  promedio = (contadorVacunados*100) / totalAnimales;
   document.getElementById('IVacunados').value = promedio;
 
 }
@@ -345,7 +359,7 @@ function maximo() {
 
   var pMaximo = 0;
   
-  pMaximo = parseInt(precioMaximo(datos,slctRaza.value));
+  pMaximo = parseInt(precioMaximo(datos));
  
   document.getElementById('IMaximo').value = pMaximo;
 
@@ -361,19 +375,16 @@ function minimo() {
 
   
 }
-function precioMaximo(array, animal){
-  console.log(animal);
-  console.log(array.filter(p => p.animal === animal));
+function precioMaximo(array){
+ 
 
-  return array.filter(p => p.animal === animal)
-  .map((anuncio) => ({ sueldo: anuncio.sueldo }))
-  .reduce((prev, actual) => prev.precio > actual.precio ? prev : actual, { sueldo: 0 
+  return array.reduce((prev, actual) => prev.precio > actual.precio ? prev : actual, { sueldo: 0 
 }).precio;
 }
 
-function precioMinimo(array,animal){
+function precioMinimo(array){
   
-  return array.filter(p => p.animal === animal).reduce((prev, actual) => prev.precio < actual.precio ? prev : actual, { sueldo: 0 
+  return array.reduce((prev, actual) => prev.precio < actual.precio ? prev : actual, { sueldo: 0 
 }).precio;
 }
 
@@ -498,6 +509,7 @@ xhr.onreadystatechange = function () {
       promedio();
       maximo();
       minimo();
+      porcentajeVacunados();
 
 
     } else {
