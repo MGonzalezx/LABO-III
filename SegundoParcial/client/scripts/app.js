@@ -7,6 +7,7 @@ import {
   validarPrecio,
   validarNumero,
 } from "./validaciones.js";
+
 import Anuncio_Mascota from "./anuncio.js";
 import { crearTabla } from "./dinamicas.js";
 
@@ -16,7 +17,7 @@ let datos;
 var myvar;
 const $divTabla = document.getElementById("divTabla");
 
-//const anuncios = JSON.parse(localStorage.getItem("anuncios")) || [];
+const anuncios = JSON.parse(localStorage.getItem("anuncios")) || [];
 const anunciosFiltrados = JSON.parse(localStorage.getItem("anunciosFiltrados")) || [];
 const divSpinner = document.getElementById("spinner");
 
@@ -258,7 +259,7 @@ for (let i = 0; i < controles.length; i++) {
 /////////////////////////////////////////////// SEGUNDO PARCIAL///////////////////////////////////////////////////////////////
 
 slctRaza.addEventListener("click", () => {
-  let pMaximo = 0;
+
   if (slctRaza.value === "todo") {
     refrescarDiv(divTabla, crearTabla(datos));
     promedio();
@@ -266,13 +267,13 @@ slctRaza.addEventListener("click", () => {
     maximo();
     minimo
     toggle();
-    actulizarStorage(refrescarDiv(divTabla, crearTabla(datos)));
+    //actulizarStorage(refrescarDiv(divTabla, crearTabla(datos)));
   } else {
     refrescarDiv(divTabla, crearTabla(filtrarRaza(datos, slctRaza.value)));
     promedio();
     porcentajeVacunados();
     maximo();
-    minimo
+    minimo();
     toggle();
     handlerUpdate(filtrarRaza(datos, slctRaza.value));
 
@@ -285,10 +286,10 @@ function toggle() {
   var inputs = $('input[type=checkbox]');
 
   for (var i = 0; i < inputs.length; i++) {
-     
-          inputs[i].checked = true;
 
-      
+    inputs[i].checked = true;
+
+
   }
 }
 
@@ -324,33 +325,33 @@ function porcentajeVacunados() {
   var contadorNoVacunados = 0;
   var contador = 0;
   $('table tbody tr').each(function () {
-    
-    if($(this).find("td:nth-last-child(1)").text() == "si"){
-      contadorVacunados = contadorVacunados +1;
-    }else{
-      contadorNoVacunados = contadorNoVacunados +1;
+
+    if ($(this).find("td:nth-last-child(1)").text() == "si") {
+      contadorVacunados = contadorVacunados + 1;
+    } else {
+      contadorNoVacunados = contadorNoVacunados + 1;
     }
 
-    if($(this).find("td:nth-last-child(5)").text() == "PERRO"){
-      contadorPerro = contadorPerro +1;
-    }else if($(this).find("td:nth-last-child(5)").text() == "GATO"){
-      contadorGato = contadorGato +1;
+    if ($(this).find("td:nth-last-child(5)").text() == "PERRO") {
+      contadorPerro = contadorPerro + 1;
+    } else if ($(this).find("td:nth-last-child(5)").text() == "GATO") {
+      contadorGato = contadorGato + 1;
     }
-    
-    
+
+
   })
 
-  
+
 
   totalAnimales = contadorGato + contadorPerro;
 
- 
-  if(contadorVacunados == 1 && contador == 2 && contadorNoVacunados == 1 && slctRaza == "todos"){
+
+  if (contadorVacunados == 1 && contador == 2 && contadorNoVacunados == 1 && slctRaza == "todos") {
     contador = 1;
-  }else if(contadorVacunados == 1 && contador == 2 && contadorNoVacunados == 1 && slctRaza == "PERRO"){
+  } else if (contadorVacunados == 1 && contador == 2 && contadorNoVacunados == 1 && slctRaza == "PERRO") {
     contador = 2;
   }
-  promedio = (contadorVacunados*100) / totalAnimales;
+  promedio = (contadorVacunados * 100) / totalAnimales;
   document.getElementById('IVacunados').value = promedio;
 
 }
@@ -358,35 +359,52 @@ function porcentajeVacunados() {
 function maximo() {
 
   var pMaximo = 0;
-  
-  pMaximo = parseInt(precioMaximo(datos));
- 
+  var auxiliar = 0;
+  $('table tbody tr').each(function () {
+
+    var precios = $(this).find("td:nth-last-child(4)").text();
+
+    auxiliar = precios;
+
+    if(auxiliar > pMaximo){
+      pMaximo = auxiliar;
+    }
+    
+    
+    
+  });
+
+
   document.getElementById('IMaximo').value = pMaximo;
 
-  
+
 }
 
 function minimo() {
 
   var pMinimo = 0;
-  
-  pMinimo = precioMinimo(datos);
+  var auxiliar = 0;
+  $('table tbody tr').each(function () {
+
+    var precios = $(this).find("td:nth-last-child(4)").text();
+
+    pMinimo = precios;
+
+    if(auxiliar > pMinimo){
+       auxiliar = pMinimo;
+    }
+    /*pMaximo = precios.reduce((prev, actual) => prev.precio > actual.precio ? prev : actual, {
+      sueldo: 0
+    }).precio;*/
+    
+    
+  });
+
   document.getElementById('IMinimo').value = pMinimo;
 
-  
-}
-function precioMaximo(array){
- 
 
-  return array.reduce((prev, actual) => prev.precio > actual.precio ? prev : actual, { sueldo: 0 
-}).precio;
 }
 
-function precioMinimo(array){
-  
-  return array.reduce((prev, actual) => prev.precio < actual.precio ? prev : actual, { sueldo: 0 
-}).precio;
-}
 
 function filtrarRaza(arr, animal) {
   return arr.filter(p => p.animal === animal);
@@ -394,21 +412,24 @@ function filtrarRaza(arr, animal) {
 
 
 
+// Trabajamos con los checkboxes
 $(document).ready(function () {
 
-  var ids = [];
+  //var ids = [];
 
   let $focusInput = $('.form-check-input');
 
 
 
   $('.form-check-input').click(function () {
-    ids = $('input[type=checkbox]:not(:checked)').map(function () {
+    /*ids = $('input[type=checkbox]:not(:checked)').map(function () {
       return $(this).attr('id');
-    }).get();
+    }).get();*/
 
-	
+
+    //obtengo los checkbox que no estan checked
     let valuesNotChecked = $focusInput.filter(':not(:checked)').map((i, el) => el.value).get();
+    // obtengo los checkbox que estan checked
     let valuesChecked = $focusInput.filter(':checked').map((i, el) => el.value).get();
 
     console.log(valuesNotChecked);
@@ -418,55 +439,45 @@ $(document).ready(function () {
 
     checkBox.addEventListener("click", (e) => {
 
-      var table = document.getElementById('miTabla');
-      var row = table.rows; // Getting the rows
+      var table = document.getElementById('miTabla'); //Obtengo my tabla
+      var row = table.rows; // Obtengo mis filas de la tabla
 
       for (var i = 0; i < row[0].cells.length; i++) {
 
-        // Getting the text of columnName
+        // Obtenemos el texto de la columna i
         var str = row[0].cells[i].innerHTML;
+        // Por cada valor dentro de valuesNotChecked vamos a buscar si
+        // ese valor está dentro del str
         for (const value of valuesNotChecked) {
-          // If 'Geek_id' matches with the columnName 
+          // Si este valor concuerda con el nombre de la columna
           if (str.search(value) != -1) {
             for (var j = 0; j < row.length; j++) {
 
-              // Deleting the ith cell of each row
-              //row[j].deleteCell(i);
-              
-                row[j].cells[i].style.display = "none";
-              
+              //hacemos desaparecer esa columna
+              row[j].cells[i].style.display = "none";
              
+
             }
           }
-          
+
         }
 
+        //Hago que las columnas vuelvan a aparecer cuando el checkbox esta checked
         for (const value of valuesChecked) {
-          // If 'Geek_id' matches with the columnName 
           if (str.search(value) != -1) {
             for (var j = 0; j < row.length; j++) {
 
-              // Deleting the ith cell of each row
-              //row[j].deleteCell(i);
-              
-                row[j].cells[i].style.display = "table-cell";
-              
              
+              row[j].cells[i].style.display = "table-cell";
+              
             }
           }
-          
+
         }
 
       }
 
-      if (e.target.matches( '#' + $(this).attr('id'))) {
-        console.log("Hola");
-        
 
-      } else {
-        console.log("chau");
-
-      }
 
     })
 
@@ -501,7 +512,6 @@ xhr.onreadystatechange = function () {
     if (xhr.status >= 200 && xhr.status < 300) {
 
       //console.log(xhr);
-      let pMaximo = 0;
       datos = JSON.parse(this.responseText);
       console.log(datos);
       //Spinner();
